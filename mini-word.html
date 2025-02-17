@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> mini word </title>
+<meta charset= "UTF-8">
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:30px;
+    margin-top: 200px;
+    background-color: bisque;
+    
+}
+h2{
+    
+    font-family:'Courier New', Courier, monospace;
+        font-size:xx-large;
+        color:cadetblue;
+}
+p{
+    font-size: x-large;
+}
+#color,#taille,#font{
+    width:200px;
+    height: 30px;
+}
+
+</style>
+</head>
+<body>
+    <h2>Mini word</h2>
+   <input type="color" id="color" >
+   <input type="number" id="taille" value="20" >
+   <select id="font" >
+  <option value="Arial">Arial</option>
+    <option value="Verdana">Verdana</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Courier New">Courier New</option>
+   </select>
+   <div id="editor">
+    <p id="parag"> choisissez un couleur,taille ou type d'ecriture</p>
+   </div>
+   <script>
+    const colorinput=document.querySelector("#color");
+    const numberinput=document.querySelector("#taille");
+    const fontselect=document.querySelector("#font");
+    const parag=document.querySelector("#parag");
+    
+    colorinput.addEventListener("input",()=>{
+    parag.style.color=colorinput.value;}
+   );
+   numberinput.addEventListener("input",()=>{
+    parag.style.fontSize=numberinput.value + "px";}
+   );
+
+   fontselect.addEventListener("change",()=>{
+    parag.style.fontFamily=fontselect.value;}
+   );
+
+
+   </script>
+</body>
+</html>

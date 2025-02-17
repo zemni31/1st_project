@@ -1,0 +1,50 @@
+h1{
+    color:blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin:30px;
+margin-top: 200px;
+background-color:darkgrey;
+display: flex;
+justify-content:space-around;
+}
+#addTodo{
+background-color: blue;
+width:100px;
+height: 25px;
+font-size: medium;
+font-family:Georgia, 'Times New Roman', Times, serif;
+border-radius: 10px;
+color: aliceblue;
+
+}
+#inputname , #inputcontent{
+width:300px;
+height: 22px;
+}
+ul{
+list-style-type: none;
+text-align: start;
+
+}
+ul>li>button{
+font-family: 'Courier New', Courier, monospace;
+font-size: large;
+width: 300px;
+background-origin: padding-box;
+border: 2px;
+border-radius: 3px;
+text-align: left;
+margin-bottom: 10px;
+}
+#content{
+padding-left: 93px;
+}
+#bordure{
+border:3px ridge blue;
+padding:50px;
+border-radius: 10px;
+}

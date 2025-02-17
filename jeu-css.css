@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    background-color:cornsilk;
+    margin:30px;
+    margin-top: 200px;
+}
+
+#difficulte{
+    font-family:'Segoe UI';
+    font-size:medium;
+}
+#difficulte,#lab{
+    font-family:'Segoe UI';
+    font-size:large;
+    color:brown
+}
+#renseignement{
+    font-family:'Segoe UI';
+    font-size:large;
+    color:red;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    color: aqua;
+}
+#choix,#nombre{
+    width:200px;
+    height: 20px;
+
+}
+#jouer{
+    width:100px;
+    height: 25px;
+    background-color: chartreuse;
+    margin-left: 0px;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color:chocolate;
+}
+#lab{
+    padding-left: 80px;
+}
+div{
+    border:4px outset brown;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+}

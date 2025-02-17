@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> liste ol </title>
+<meta charset= "UTF-8">
+<style>
+    h1{
+        font-family:'Courier New', Courier, monospace;
+        font-size: large;
+        color:cadetblue;
+    }
+    ol {
+        display: block;
+        cursor:pointer;
+font-family: Georgia, Times, 'Times New Roman', serif;
+font-size: large;
+border:2px solid ;
+border-color: cadetblue;
+border-radius: 4px;
+width: 50%;
+list-style-position: inside;
+    }
+  body{
+    margin-top:10% ;
+    margin-left: 30%;
+background-color:azure;
+  }
+
+</style>
+</head>
+<body>
+    <h1>Il suffit de cliquer sur une ligne pour changer sa couleur aleatoirement :)</h1>
+<ol>
+ <li>la 1er ligne </li>
+   <li>la 2eme ligne </li> 
+  <li>la 3eme ligne </li> 
+    <li>la 4eme ligne </li> 
+    <li>la 5eme ligne </li>
+
+</ol>
+
+<script>
+    function GetRandomColor(){
+        return '#'+ Math.floor(Math.random()*16777215).toString(16); 
+    }
+    document.querySelectorAll('li').forEach(element => {
+        element.addEventListener('click',function(){
+this.style.backgroundColor=GetRandomColor();
+        });
+    
+        
+        
+    });
+</script>
+</body>
+
+</html>
